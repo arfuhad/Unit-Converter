@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABB380AD24DED5F9007B3D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB380AC24DED5F9007B3D6D /* AppDelegate.swift */; };
+		ABB380AF24DED5F9007B3D6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB380AE24DED5F9007B3D6D /* SceneDelegate.swift */; };
+		ABB380B124DED5F9007B3D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB380B024DED5F9007B3D6D /* ViewController.swift */; };
+		ABB380B424DED5F9007B3D6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB380B224DED5F9007B3D6D /* Main.storyboard */; };
+		ABB380B624DED5FE007B3D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB380B524DED5FE007B3D6D /* Assets.xcassets */; };
+		ABB380B924DED5FE007B3D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB380B724DED5FE007B3D6D /* LaunchScreen.storyboard */; };
+		ABB380C424DED5FF007B3D6D /* Unit_ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB380C324DED5FF007B3D6D /* Unit_ConverterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABB380C024DED5FF007B3D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABB380A124DED5F9007B3D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABB380A824DED5F9007B3D6D;
+			remoteInfo = "Unit Converter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABB380A924DED5F9007B3D6D /* Unit Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB380AC24DED5F9007B3D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABB380AE24DED5F9007B3D6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ABB380B024DED5F9007B3D6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABB380B324DED5F9007B3D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABB380B524DED5FE007B3D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABB380B824DED5FE007B3D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABB380BA24DED5FE007B3D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABB380BF24DED5FF007B3D6D /* Unit ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit ConverterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB380C324DED5FF007B3D6D /* Unit_ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_ConverterTests.swift; sourceTree = "<group>"; };
+		ABB380C524DED5FF007B3D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABB380A624DED5F9007B3D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB380BC24DED5FF007B3D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABB380A024DED5F9007B3D6D = {
+			isa = PBXGroup;
+			children = (
+				ABB380AB24DED5F9007B3D6D /* Unit Converter */,
+				ABB380C224DED5FF007B3D6D /* Unit ConverterTests */,
+				ABB380AA24DED5F9007B3D6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABB380AA24DED5F9007B3D6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABB380A924DED5F9007B3D6D /* Unit Converter.app */,
+				ABB380BF24DED5FF007B3D6D /* Unit ConverterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABB380AB24DED5F9007B3D6D /* Unit Converter */ = {
+			isa = PBXGroup;
+			children = (
+				ABB380AC24DED5F9007B3D6D /* AppDelegate.swift */,
+				ABB380AE24DED5F9007B3D6D /* SceneDelegate.swift */,
+				ABB380B024DED5F9007B3D6D /* ViewController.swift */,
+				ABB380B224DED5F9007B3D6D /* Main.storyboard */,
+				ABB380B524DED5FE007B3D6D /* Assets.xcassets */,
+				ABB380B724DED5FE007B3D6D /* LaunchScreen.storyboard */,
+				ABB380BA24DED5FE007B3D6D /* Info.plist */,
+			);
+			path = "Unit Converter";
+			sourceTree = "<group>";
+		};
+		ABB380C224DED5FF007B3D6D /* Unit ConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABB380C324DED5FF007B3D6D /* Unit_ConverterTests.swift */,
+				ABB380C524DED5FF007B3D6D /* Info.plist */,
+			);
+			path = "Unit ConverterTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABB380A824DED5F9007B3D6D /* Unit Converter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABB380C824DED5FF007B3D6D /* Build configuration list for PBXNativeTarget "Unit Converter" */;
+			buildPhases = (
+				ABB380A524DED5F9007B3D6D /* Sources */,
+				ABB380A624DED5F9007B3D6D /* Frameworks */,
+				ABB380A724DED5F9007B3D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Unit Converter";
+			productName = "Unit Converter";
+			productReference = ABB380A924DED5F9007B3D6D /* Unit Converter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABB380BE24DED5FF007B3D6D /* Unit ConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABB380CB24DED5FF007B3D6D /* Build configuration list for PBXNativeTarget "Unit ConverterTests" */;
+			buildPhases = (
+				ABB380BB24DED5FF007B3D6D /* Sources */,
+				ABB380BC24DED5FF007B3D6D /* Frameworks */,
+				ABB380BD24DED5FF007B3D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABB380C124DED5FF007B3D6D /* PBXTargetDependency */,
+			);
+			name = "Unit ConverterTests";
+			productName = "Unit ConverterTests";
+			productReference = ABB380BF24DED5FF007B3D6D /* Unit ConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABB380A124DED5F9007B3D6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Abdur Rahman";
+				TargetAttributes = {
+					ABB380A824DED5F9007B3D6D = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					ABB380BE24DED5FF007B3D6D = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = ABB380A824DED5F9007B3D6D;
+					};
+				};
+			};
+			buildConfigurationList = ABB380A424DED5F9007B3D6D /* Build configuration list for PBXProject "Unit Converter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABB380A024DED5F9007B3D6D;
+			productRefGroup = ABB380AA24DED5F9007B3D6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABB380A824DED5F9007B3D6D /* Unit Converter */,
+				ABB380BE24DED5FF007B3D6D /* Unit ConverterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABB380A724DED5F9007B3D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB380B924DED5FE007B3D6D /* LaunchScreen.storyboard in Resources */,
+				ABB380B624DED5FE007B3D6D /* Assets.xcassets in Resources */,
+				ABB380B424DED5F9007B3D6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB380BD24DED5FF007B3D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABB380A524DED5F9007B3D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB380B124DED5F9007B3D6D /* ViewController.swift in Sources */,
+				ABB380AD24DED5F9007B3D6D /* AppDelegate.swift in Sources */,
+				ABB380AF24DED5F9007B3D6D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB380BB24DED5FF007B3D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB380C424DED5FF007B3D6D /* Unit_ConverterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABB380C124DED5FF007B3D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABB380A824DED5F9007B3D6D /* Unit Converter */;
+			targetProxy = ABB380C024DED5FF007B3D6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABB380B224DED5F9007B3D6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABB380B324DED5F9007B3D6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABB380B724DED5FE007B3D6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABB380B824DED5FE007B3D6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABB380C624DED5FF007B3D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABB380C724DED5FF007B3D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABB380C924DED5FF007B3D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542MS488T7;
+				INFOPLIST_FILE = "Unit Converter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qbittco.Unit-Converter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABB380CA24DED5FF007B3D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542MS488T7;
+				INFOPLIST_FILE = "Unit Converter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qbittco.Unit-Converter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ABB380CC24DED5FF007B3D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542MS488T7;
+				INFOPLIST_FILE = "Unit ConverterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qbittco.Unit-ConverterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unit Converter.app/Unit Converter";
+			};
+			name = Debug;
+		};
+		ABB380CD24DED5FF007B3D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542MS488T7;
+				INFOPLIST_FILE = "Unit ConverterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qbittco.Unit-ConverterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unit Converter.app/Unit Converter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABB380A424DED5F9007B3D6D /* Build configuration list for PBXProject "Unit Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB380C624DED5FF007B3D6D /* Debug */,
+				ABB380C724DED5FF007B3D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABB380C824DED5FF007B3D6D /* Build configuration list for PBXNativeTarget "Unit Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB380C924DED5FF007B3D6D /* Debug */,
+				ABB380CA24DED5FF007B3D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABB380CB24DED5FF007B3D6D /* Build configuration list for PBXNativeTarget "Unit ConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB380CC24DED5FF007B3D6D /* Debug */,
+				ABB380CD24DED5FF007B3D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABB380A124DED5F9007B3D6D /* Project object */;
+}
