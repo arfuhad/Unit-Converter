@@ -14,6 +14,9 @@
 		ABB380B624DED5FE007B3D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB380B524DED5FE007B3D6D /* Assets.xcassets */; };
 		ABB380B924DED5FE007B3D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB380B724DED5FE007B3D6D /* LaunchScreen.storyboard */; };
 		ABB380C424DED5FF007B3D6D /* Unit_ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB380C324DED5FF007B3D6D /* Unit_ConverterTests.swift */; };
+		ABB380D024DEE0B5007B3D6D /* ConverterTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB380CF24DEE0B5007B3D6D /* ConverterTxtField.swift */; };
+		ABB380D424DEEAC2007B3D6D /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB380D324DEEAC2007B3D6D /* Converter.swift */; };
+		ABB380D524DEED0B007B3D6D /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB380D324DEEAC2007B3D6D /* Converter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,8 @@
 		ABB380BF24DED5FF007B3D6D /* Unit ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit ConverterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB380C324DED5FF007B3D6D /* Unit_ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_ConverterTests.swift; sourceTree = "<group>"; };
 		ABB380C524DED5FF007B3D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABB380CF24DEE0B5007B3D6D /* ConverterTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTxtField.swift; sourceTree = "<group>"; };
+		ABB380D324DEEAC2007B3D6D /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +84,11 @@
 		ABB380AB24DED5F9007B3D6D /* Unit Converter */ = {
 			isa = PBXGroup;
 			children = (
+				ABB380D224DEEAA7007B3D6D /* Controller */,
+				ABB380D124DEEA9D007B3D6D /* Models */,
+				ABB380CE24DEE08A007B3D6D /* Views */,
 				ABB380AC24DED5F9007B3D6D /* AppDelegate.swift */,
 				ABB380AE24DED5F9007B3D6D /* SceneDelegate.swift */,
-				ABB380B024DED5F9007B3D6D /* ViewController.swift */,
 				ABB380B224DED5F9007B3D6D /* Main.storyboard */,
 				ABB380B524DED5FE007B3D6D /* Assets.xcassets */,
 				ABB380B724DED5FE007B3D6D /* LaunchScreen.storyboard */,
@@ -97,6 +104,30 @@
 				ABB380C524DED5FF007B3D6D /* Info.plist */,
 			);
 			path = "Unit ConverterTests";
+			sourceTree = "<group>";
+		};
+		ABB380CE24DEE08A007B3D6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ABB380CF24DEE0B5007B3D6D /* ConverterTxtField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ABB380D124DEEA9D007B3D6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABB380D324DEEAC2007B3D6D /* Converter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABB380D224DEEAA7007B3D6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ABB380B024DED5F9007B3D6D /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +233,9 @@
 			files = (
 				ABB380B124DED5F9007B3D6D /* ViewController.swift in Sources */,
 				ABB380AD24DED5F9007B3D6D /* AppDelegate.swift in Sources */,
+				ABB380D024DEE0B5007B3D6D /* ConverterTxtField.swift in Sources */,
 				ABB380AF24DED5F9007B3D6D /* SceneDelegate.swift in Sources */,
+				ABB380D424DEEAC2007B3D6D /* Converter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB380D524DEED0B007B3D6D /* Converter.swift in Sources */,
 				ABB380C424DED5FF007B3D6D /* Unit_ConverterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +399,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 542MS488T7;
 				INFOPLIST_FILE = "Unit Converter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +418,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 542MS488T7;
 				INFOPLIST_FILE = "Unit Converter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,7 +438,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 542MS488T7;
 				INFOPLIST_FILE = "Unit ConverterTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,7 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 542MS488T7;
 				INFOPLIST_FILE = "Unit ConverterTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="Unit_Converter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appBG" translatesAutoresizingMaskIntoConstraints="NO" id="KRn-Q9-yFE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qbitlogotrans" translatesAutoresizingMaskIntoConstraints="NO" id="69O-nR-Gfw">
+                                <rect key="frame" x="139.66666666666666" y="35" width="134.99999999999997" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="OLc-Y4-bQB"/>
+                                    <constraint firstAttribute="width" constant="135" id="uAu-K5-gBc"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount to Convert" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="7z1-H4-6o7" customClass="ConverterTxtField" customModule="Unit_Converter" customModuleProvider="target">
+                                <rect key="frame" x="20" y="226" width="374" height="45"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="jzI-QO-e1y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wfa-E1-ohT">
+                                <rect key="frame" x="155.66666666666666" y="291" width="102.99999999999997" height="32"/>
+                                <segments>
+                                    <segment title="Km"/>
+                                    <segment title="Miles"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <connections>
+                                    <action selector="unitSegAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="7eg-kx-Rpc"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbd-sm-cdm">
+                                <rect key="frame" x="169.33333333333334" y="341" width="75.666666666666657" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="KY9-cj-2vS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilometers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOU-Ff-XPc">
+                                <rect key="frame" x="160.66666666666666" y="439" width="93" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cdf-Tu-QcM">
+                                <rect key="frame" x="144.66666666666666" y="180" width="124.99999999999997" height="32"/>
+                                <segments>
+                                    <segment title="Length"/>
+                                    <segment title="Weigth"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <connections>
+                                    <action selector="typeSegAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="x6a-d8-mVS"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KRn-Q9-yFE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3y1-vT-xtt"/>
+                            <constraint firstItem="7z1-H4-6o7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BN2-1G-oGP"/>
+                            <constraint firstItem="GOU-Ff-XPc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CmO-H2-2R0"/>
+                            <constraint firstItem="69O-nR-Gfw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RKD-iE-pWl"/>
+                            <constraint firstItem="GOU-Ff-XPc" firstAttribute="top" secondItem="zbd-sm-cdm" secondAttribute="bottom" constant="20" id="bSU-ep-UBI"/>
+                            <constraint firstItem="KRn-Q9-yFE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bbZ-4S-R7t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7z1-H4-6o7" secondAttribute="trailing" constant="20" id="dJo-DV-huD"/>
+                            <constraint firstItem="cdf-Tu-QcM" firstAttribute="top" secondItem="69O-nR-Gfw" secondAttribute="bottom" constant="10" id="fIa-C8-bbO"/>
+                            <constraint firstItem="zbd-sm-cdm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gGG-4U-7mp"/>
+                            <constraint firstItem="KRn-Q9-yFE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o5v-qR-XTe"/>
+                            <constraint firstItem="zbd-sm-cdm" firstAttribute="top" secondItem="7z1-H4-6o7" secondAttribute="bottom" constant="70" id="pTT-wE-w6I"/>
+                            <constraint firstItem="Wfa-E1-ohT" firstAttribute="top" secondItem="7z1-H4-6o7" secondAttribute="bottom" constant="20" id="tYr-vX-qhG"/>
+                            <constraint firstItem="69O-nR-Gfw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="uJE-Fw-mv5"/>
+                            <constraint firstItem="Wfa-E1-ohT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uVm-M0-TFt"/>
+                            <constraint firstItem="7z1-H4-6o7" firstAttribute="top" secondItem="cdf-Tu-QcM" secondAttribute="bottom" constant="15" id="vGp-gx-cxP"/>
+                            <constraint firstItem="cdf-Tu-QcM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wkG-aH-LWS"/>
+                            <constraint firstItem="KRn-Q9-yFE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="y32-0N-hv8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="amntVeriableTxt" destination="GOU-Ff-XPc" id="l1R-tx-26O"/>
+                        <outlet property="amountConverteTxt" destination="zbd-sm-cdm" id="WS8-Of-XgC"/>
+                        <outlet property="converterTxt" destination="7z1-H4-6o7" id="5u1-hL-ac4"/>
+                        <outlet property="typeSegOutlet" destination="cdf-Tu-QcM" id="chI-lw-vgk"/>
+                        <outlet property="unitSegOutlet" destination="Wfa-E1-ohT" id="zGx-Of-Ubq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="106.79347826086958"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="appBG" width="774.66668701171875" height="1160.3333740234375"/>
+        <image name="qbitlogotrans" width="125.33333587646484" height="125.33333587646484"/>
+    </resources>
 </document>
